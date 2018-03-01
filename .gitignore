@@ -1,0 +1,5 @@
+# cmake files
+/build
+
+# nix files
+result-*
