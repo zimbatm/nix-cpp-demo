@@ -1,4 +1,4 @@
-{ stdenv, lib
+{ clangStdenv, lib
 , boost16x
 , cmake
 , cppkafka
@@ -8,7 +8,7 @@
 , rdkafka
 }:
 
-stdenv.mkDerivation {
+clangStdenv.mkDerivation {
   name = "nix-cpp-demo";
   src = lib.cleanSource ../src;
   nativeBuildInputs = [ cmake ];
